@@ -13,13 +13,13 @@ const sumAll = function (start, iterations) {
 
   //Checks which value is the bigger number
   if (start < iterations) {
-    for (let i = 0; i < iterations; i++) {
-      sum += start + i;
+    for (let i = start; i < iterations + 1; i++) {
+      sum += i;
     }
     return sum;
   } else {
-    for (let i = 0; i < start; i++) {
-      sum += iterations + i;
+    for (let i = iterations; i < start + 1; i++) {
+      sum += i;
     }
     return sum;
   }
